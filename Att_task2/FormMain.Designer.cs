@@ -35,9 +35,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.textBoxRating = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBoxQ = new System.Windows.Forms.TextBox();
             this.textBoxP = new System.Windows.Forms.TextBox();
-            this.textBoxQp = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -51,6 +49,8 @@
             this.textBoxRating_2 = new System.Windows.Forms.TextBox();
             this.labelName_2 = new System.Windows.Forms.Label();
             this.buttonRun = new System.Windows.Forms.Button();
+            this.labelQ = new System.Windows.Forms.Label();
+            this.labelQp = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelName
@@ -112,31 +112,17 @@
             this.label2.TabIndex = 6;
             this.label2.Text = "Q:";
             // 
-            // textBoxQ
-            // 
-            this.textBoxQ.Location = new System.Drawing.Point(399, 81);
-            this.textBoxQ.Name = "textBoxQ";
-            this.textBoxQ.Size = new System.Drawing.Size(100, 22);
-            this.textBoxQ.TabIndex = 7;
-            // 
             // textBoxP
             // 
-            this.textBoxP.Location = new System.Drawing.Point(528, 249);
+            this.textBoxP.Location = new System.Drawing.Point(399, 249);
             this.textBoxP.Name = "textBoxP";
             this.textBoxP.Size = new System.Drawing.Size(100, 22);
             this.textBoxP.TabIndex = 8;
             // 
-            // textBoxQp
-            // 
-            this.textBoxQp.Location = new System.Drawing.Point(663, 249);
-            this.textBoxQp.Name = "textBoxQp";
-            this.textBoxQp.Size = new System.Drawing.Size(100, 22);
-            this.textBoxQp.TabIndex = 9;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(525, 229);
+            this.label3.Location = new System.Drawing.Point(396, 229);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(21, 17);
             this.label3.TabIndex = 10;
@@ -145,7 +131,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(660, 229);
+            this.label4.Location = new System.Drawing.Point(525, 229);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(31, 17);
             this.label4.TabIndex = 11;
@@ -237,19 +223,39 @@
             // 
             // buttonRun
             // 
-            this.buttonRun.Location = new System.Drawing.Point(528, 81);
+            this.buttonRun.Location = new System.Drawing.Point(443, 61);
             this.buttonRun.Name = "buttonRun";
-            this.buttonRun.Size = new System.Drawing.Size(235, 97);
+            this.buttonRun.Size = new System.Drawing.Size(113, 146);
             this.buttonRun.TabIndex = 21;
             this.buttonRun.Text = "Посчитать";
             this.buttonRun.UseVisualStyleBackColor = true;
             this.buttonRun.Click += new System.EventHandler(this.buttonRun_Click);
             // 
+            // labelQ
+            // 
+            this.labelQ.AutoSize = true;
+            this.labelQ.Location = new System.Drawing.Point(396, 81);
+            this.labelQ.Name = "labelQ";
+            this.labelQ.Size = new System.Drawing.Size(13, 17);
+            this.labelQ.TabIndex = 22;
+            this.labelQ.Text = "-";
+            // 
+            // labelQp
+            // 
+            this.labelQp.AutoSize = true;
+            this.labelQp.Location = new System.Drawing.Point(525, 254);
+            this.labelQp.Name = "labelQp";
+            this.labelQp.Size = new System.Drawing.Size(13, 17);
+            this.labelQp.TabIndex = 22;
+            this.labelQp.Text = "-";
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(789, 349);
+            this.ClientSize = new System.Drawing.Size(585, 349);
+            this.Controls.Add(this.labelQp);
+            this.Controls.Add(this.labelQ);
             this.Controls.Add(this.buttonRun);
             this.Controls.Add(this.labelName_2);
             this.Controls.Add(this.textBoxInvestments_2);
@@ -263,9 +269,7 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBoxQp);
             this.Controls.Add(this.textBoxP);
-            this.Controls.Add(this.textBoxQ);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBoxRating);
             this.Controls.Add(this.label1);
@@ -289,9 +293,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBoxRating;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBoxQ;
         private System.Windows.Forms.TextBox textBoxP;
-        private System.Windows.Forms.TextBox textBoxQp;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -305,6 +307,8 @@
         private System.Windows.Forms.TextBox textBoxRating_2;
         private System.Windows.Forms.Label labelName_2;
         private System.Windows.Forms.Button buttonRun;
+        private System.Windows.Forms.Label labelQ;
+        private System.Windows.Forms.Label labelQp;
     }
 }
 
