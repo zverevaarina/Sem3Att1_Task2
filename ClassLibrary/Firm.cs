@@ -12,7 +12,6 @@ namespace ClassLibrary
         protected string Name;
         protected int Income;
         protected int Rating;
-        protected int Q;
 
         public Firm(string name, int income, int rating)
         {
@@ -23,9 +22,9 @@ namespace ClassLibrary
 
         public virtual int QFunction()
         {
-            Q = Income * Rating;
-            return Q;
+            return Income * Rating;
         }
+
         public string ShowInfo()
         {
             return Convert.ToString(Name + ' ' + Income + ' ' + Rating);

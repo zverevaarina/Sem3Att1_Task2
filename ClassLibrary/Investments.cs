@@ -17,7 +17,7 @@ namespace ClassLibrary
 
         public override int QFunction()
         {
-            return P*P*P+base.Q;
+            return P*P*P+base.QFunction();
         }
     }
 }
